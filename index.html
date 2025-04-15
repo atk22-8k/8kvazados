@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8K VAZADOS</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Rajdhani:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Rajdhani', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      overflow: hidden;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 4rem;
+      background: linear-gradient(90deg, #ff6ec4, #7873f5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1.5rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+
+    .mensagem {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      max-width: 700px;
+      z-index: 1;
+    }
+
+    .mensagem p {
+      text-transform: capitalize;
+    }
+
+    .convite {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff6ec4, #7873f5);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      z-index: 1;
+    }
+
+    .convite:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 110, 196, 0.5);
+    }
+
+    /* Bolhas no fundo */
+    .bolhas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .bolhas span {
+      position: absolute;
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: rgba(255, 110, 196, 0.2);
+      border-radius: 50%;
+      animation: float 20s infinite;
+      bottom: -150px;
+    }
+
+    .bolhas span:nth-child(odd) {
+      background: rgba(120, 115, 245, 0.2);
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.3;
+      }
+      50% {
+        opacity: 0.6;
+      }
+      100% {
+        transform: translateY(-1000px) scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    /* Posições randomizadas das bolhas */
+    .bolhas span:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .bolhas span:nth-child(2) { left: 25%; animation-delay: 2s; }
+    .bolhas span:nth-child(3) { left: 40%; animation-delay: 4s; }
+    .bolhas span:nth-child(4) { left: 55%; animation-delay: 1s; }
+    .bolhas span:nth-child(5) { left: 70%; animation-delay: 3s; }
+    .bolhas span:nth-child(6) { left: 85%; animation-delay: 5s; }
+    .bolhas span:nth-child(7) { left: 30%; animation-delay: 1.5s; }
+    .bolhas span:nth-child(8) { left: 60%; animation-delay: 2.5s; }
+    .bolhas span:nth-child(9) { left: 90%; animation-delay: 0.5s; }
+    .bolhas span:nth-child(10) { left: 15%; animation-delay: 4.5s; }
+  </style>
+</head>
+<body>
+
+  <h1>8K VAZADOS</h1>
+
+  <div class="mensagem">
+    <p>Entre para o maior grupo de vazados do Brasil</p>
+  </div>
+
+  <a class="convite" href="https://seulink.com" target="_blank">🚀 Entrar Agora</a>
+
+  <!-- Bolhas -->
+  <div class="bolhas">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+</body>
+</html>
